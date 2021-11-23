@@ -38,10 +38,12 @@ Progress:
   9. Ok, I was able to see with the bash command who I am and ls files, so logically I can do a reverse shell, do ... We get access to the server in 2 steps:
 
 ![unnamed5](https://user-images.githubusercontent.com/57565730/142986201-1ca575ea-d671-405f-8f3c-7741836dde6a.png)
-                                                Step 1
+
+Step 1
                                                 
 ![unnamed6](https://user-images.githubusercontent.com/57565730/142986335-3ae5a2d5-2e8c-48e5-8fcd-a7f50e82bcf4.png)           
-                                                Step 2
+
+Step 2
 
 As a result, we throw the reverse shell, now we are on the server side, congratulations, but this is just the beginning.
 
