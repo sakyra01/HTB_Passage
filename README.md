@@ -97,8 +97,8 @@ Next, I search for interesting completed processes from root, I found a strange 
 
 ![unnamed16](https://user-images.githubusercontent.com/57565730/142988649-18f05c5f-51f0-42ad-b125-662720e503ad.png)
 
-usb-creator-helper, иду в гугл и нахожу первую попавшуюся статью по повышению привилегий с помощью usb-creator
-ссылка:
+usb-creator-helper, I go to google and find the first article I see on privilege escalation with usb-creator
+link:
   * https://unit42.paloaltonetworks.com/usbcreator-d-bus-privilege-escalation-in-ubuntu-desktop/
 
   3. After reading the articles, I understood the general principle of the vulnerability and was able to exploit it using a ready-made example from the article ...
