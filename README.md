@@ -48,12 +48,15 @@ As a result, we throw the reverse shell, now we are on the server side, congratu
   10. And so we are on the server, but as web-data, we are still nobody, but this will change soon, then the routine work begins, browsing directories and looking for something interesting ....
 
 ![unnamed7](https://user-images.githubusercontent.com/57565730/142986567-e5481c77-6ca9-481d-b951-204fa9cf6adc.png)
+
 After 2.5 hours, I came across the www directory:
 
 ![unnamed8](https://user-images.githubusercontent.com/57565730/142986823-acec6f56-1736-48c9-816c-fed6a4a7e8b8.png)
+
 After going through some files, I came to the b0.php file
 
 ![unnamed9](https://user-images.githubusercontent.com/57565730/142986918-8f90a261-2bc8-418e-83bf-cb24643a2289.png)
+
 Looking at the structure of the cipher, I immediately realized that it was base64, as a result of which I used the site decoder ...
 
 ![unnamed10](https://user-images.githubusercontent.com/57565730/142987026-62750099-9794-4774-b3cf-e9a61808f5f1.png)
@@ -63,6 +66,7 @@ There is a hash password inside, there is even this written there, I also google
 ![unnamed11](https://user-images.githubusercontent.com/57565730/142987236-98153554-871c-4290-a932-861140327ca0.png)
 
 >Login: paul
+
 >Password: atlanta1
 
   11. It remains only to log in as a user
