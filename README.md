@@ -77,4 +77,36 @@ There is a hash password inside, there is even this written there, I also google
 
 We are in the system!
 
+# Machine solution (GET ROOT)
+Progress:
+  1. I start to browse the paul directory, very quickly find the right .shh directory with the command to show hidden files and directories ...
+  
+![unnamed13](https://user-images.githubusercontent.com/57565730/142988270-1de96d07-2bba-4cfd-b6d5-ff698ec7a889.png)
+
+Lo and behold, this folder has id_rsa with which I can connect to another user - nadav
+  
+![unnamed14](https://user-images.githubusercontent.com/57565730/142988443-ba8ee4b2-4c9a-4c9b-aa6c-cffe729edccb.png)
+
+now I'm logged in as another user, let's see what we find here ...
+ 
+  2. After several hours of searching directories for information, I still decided to look at the process history using the ps auwx command 
+  
+![unnamed15](https://user-images.githubusercontent.com/57565730/142988543-431a058e-61ed-49b8-a180-218d9c469eae.png)
+
+Next, I search for interesting completed processes from root, I found a strange process
+
+![unnamed16](https://user-images.githubusercontent.com/57565730/142988649-18f05c5f-51f0-42ad-b125-662720e503ad.png)
+
+usb-creator-helper, иду в гугл и нахожу первую попавшуюся статью по повышению привилегий с помощью usb-creator
+ссылка:
+  * https://unit42.paloaltonetworks.com/usbcreator-d-bus-privilege-escalation-in-ubuntu-desktop/
+
+  3. After reading the articles, I understood the general principle of the vulnerability and was able to exploit it using a ready-made example from the article ...
+
+Further, it was simply possible to use root id_rsa to connect to root using ssh. A couple of clicks and we are in the system as root.
+
+![unnamed17](https://user-images.githubusercontent.com/57565730/142988944-e0512dba-b65a-4061-b0ac-5c6afc6169fc.png)
+
+Here is our flag comrades!
+
 
